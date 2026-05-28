@@ -15,3 +15,21 @@ pills.forEach(pill => {
         pill.classList.toggle('open', !isOpen);
     });
 });
+
+function openPill(pill) {
+    pill.querySelector('.pill-summary').setAttribute('aria-expanded', 'true');
+    pill.querySelector('.pill-abstract').hidden = false;
+    pill.querySelector('.expand-icon').textContent = '−';
+    pill.classList.add('open');
+}
+
+const hash = window.location.hash.slice(1);
+if (hash) {
+    const target = document.getElementById(hash);
+    if (target && target.classList.contains('speaker-pill')) {
+        openPill(target);
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+}else {
+    openPill(document.querySelector('.speaker-pill'));
+}

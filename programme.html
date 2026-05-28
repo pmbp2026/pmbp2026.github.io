@@ -43,20 +43,20 @@
 
 	<div class="speaker-grid">
 
-		<div class="speaker-pill open" data-type="panel">
-		    <button class="pill-summary" aria-expanded="true">
+		<div class="speaker-pill" id="carleo" data-type="panel">
+		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Neural Quantum States for Precision Many-Body Physics</span>
 			    <span class="speaker-byline">Giuseppe Carleo &middot; EPFL</span>
 			</div>
-			<span class="expand-icon" aria-hidden="false">-</span>
+			<span class="expand-icon" aria-hidden="true">+</span>
 		    </button>
-		    <div class="pill-abstract">
+		    <div class="pill-abstract" hidden>
 			<p>Neural-network quantum states have matured into a quantitative variational method for strongly correlated systems. I will present two recent developments: Hamiltonian-conditioned foundation NQS and neural-network-augmented Pfaffian states, which extend accurate variational treatment across families of spin and fermionic models. I will then discuss applications to frustrated antiferromagnets, on lattices large enough for controlled finite-size scaling, and to the doped two-dimensional Hubbard model, where competing stripe and pairing orders can be resolved and cross-validated against established methods. I will close with a brief outlook on continuum fermions and real-time dynamics.</p>
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="chen" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">From Kohn-Sham Theory to the Coulomb Pseudopotential: An Effective Field Theory of the Inhomogeneous Electron Gas</span>
@@ -69,7 +69,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="esslinger" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">A Paradox and Geometric Swap Gates</span>
@@ -82,7 +82,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="feng" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Interaction-Driven Ferrimagnetic Stripes in the Extended Hubbard Model</span>
@@ -95,7 +95,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="foulkes" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Approximating Many-Electron Wave Functions with Neural Networks</span>
@@ -108,20 +108,20 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="gazo" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
-			    <span class="abstract-title">To be announced</span>
+			    <span class="abstract-title">Regimes of far-from-equilibrium Bose–Einstein condensation</span>
 			    <span class="speaker-byline">Martin Gazo &middot; Cambridge</span>
 			</div>
 			<span class="expand-icon" aria-hidden="true">+</span>
 		    </button>
 		    <div class="pill-abstract" hidden>
-			<p>To be announced</p>
+			<p>Relaxation and condensation of an isolated low-energy Bose gas provide a controlled setting for the study of the universal features of many-body dynamics and the emergence of large-scale order.  Here, by probing the gas across all relevant length scales, we experimentally study regimes of order formation during far-from-equilibrium Bose–Einstein condensation. We find that the first stage, associated with the formation of small-scale coherence can be understood within the framework of weak wave turbulence. Specifically, the initial transport of particles to low momenta corresponds to an inverse turbulent cascade that is, in agreement with the theory, characterized by a power-law momentum distribution and transport times set by the strength of the interactions. The second stage features spreading of coherence over length scales much larger than any microscopic scale, at a universal rate that is independent of interparticle interactions and determined solely by the ratio of Planck’s constant to the atom mass. Theoretically, this process has been associated with the relaxation of vortex and wave excitations. By magnifying the gas and imaging only a slice, we reveal randomly oriented vortex lines, quantify their decay, and find that it is consistent with the predictions of ultraquantum Vinen turbulence for the decay of a vortex tangle.</p>
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="georges" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">The Two-Dimensional Hubbard Model: Known Knowns and Known Unknowns</span>
@@ -134,7 +134,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="hicks" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Mysteries in the superconductivity of Sr2RuO4</span>
@@ -147,7 +147,20 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="homeier" data-type="panel">
+		    <button class="pill-summary" aria-expanded="false">
+			<div class="pill-main">
+			    <span class="abstract-title">Realizing multi-orbital Emery models with ultracold atoms</span>
+			    <span class="speaker-byline">Lukas Homeier &middot; JILA</span>
+			</div>
+			<span class="expand-icon" aria-hidden="true">+</span>
+		    </button>
+		    <div class="pill-abstract" hidden>
+			<p>Strongly-correlated electrons in transition-metal oxides give rise to intriguing emergent phenomena, including high-temperature superconductivity in cuprates. While simplified one-band Hubbard models capture some aspects, explicitly describing the interplay of copper and oxygen orbitals -- as in the three-band Emery model -- is essential to capture the full phenomenology of cuprates. Quantum simulators based on ultracold atoms offer a promising route to study such systems in a controlled setting, but realizing realistic multi-orbital Hubbard models remains challenging. In my talk, I propose an optical superlattice architecture that implements the three-band Emery model with ultracold fermions. By combining lattice beams with controllable interference, we engineer orbital degrees of freedom that reproduce key features of the cuprate band structure, while enabling independent control of orbital-dependent interactions and charge-transfer energy. Using determinant quantum Monte Carlo, we further investigate thermodynamic properties in the undoped regime and find a finite-temperature metal-insulator crossover accompanied by the onset of antiferromagnetic correlations accessible in current experiments. Finally, we apply a Hamiltonian learning protocol enabling to infer effective single-band Hubbard models from experimental realizations of Emery models. Our results provide a practical pathway to simulate multi-orbital Hubbard physics with quantum gas microscopes.</p>
+		    </div>
+		</div>
+
+		<div class="speaker-pill" id="padilla" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Quantum quenches in a spin-1 chain with tunable symmetry</span>
@@ -160,7 +173,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="kauch" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">To be announced</span>
@@ -173,7 +186,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="mahajan" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">To be announced</span>
@@ -186,7 +199,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="millis" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Electron-Phonon Interactions in Quantum Materials</span>
@@ -199,7 +212,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="valenti" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">A neural-network approach to two-dimensional materials</span>
@@ -212,7 +225,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="delft" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Precision computation of real-frequency dynamical 2- and 4-point correlators of many-body systems</span>
@@ -225,7 +238,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="werner" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Accurate nonequilibrium impurity solvers and application to eta-pairing states</span>
@@ -238,7 +251,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="yao" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Pairing and superfluidity in strongly interacting Fermi systems</span>
@@ -251,7 +264,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="yefsah" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Probing Spatial Correlations in Strongly-Interacting Fermi Gases</span>
@@ -264,7 +277,7 @@
 		    </div>
 		</div>
 
-		<div class="speaker-pill" data-type="panel">
+		<div class="speaker-pill" id="zwierlein" data-type="panel">
 		    <button class="pill-summary" aria-expanded="false">
 			<div class="pill-main">
 			    <span class="abstract-title">Fermion Pairs under the Microscope</span>
@@ -277,140 +290,7 @@
 		    </div>
 		</div>
 
-
-	<!--
-        <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">GC</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Giuseppe Carleo</span>
-                    <span class="speaker-affiliation">EPFL</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">KC</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Kun Chen</span>
-                    <span class="speaker-affiliation">Chinese Academy of Sciences</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">TE</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Tilman Esslinger</span>
-                    <span class="speaker-affiliation">ETH Zürich</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">CF</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Chunhan Feng</span>
-                    <span class="speaker-affiliation">Max Planck Institute for the Physics of Complex Systems</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">MF</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Matthew Foulkes</span>
-                    <span class="speaker-affiliation">Imperial College London</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">MG</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Martin Gazo</span>
-                    <span class="speaker-affiliation">Cambridge</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">AG</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Antoine Georges</span>
-                    <span class="speaker-affiliation">Collège de France and CCQ Flatiron Institute</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">CH</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Clifford Hicks</span>
-                    <span class="speaker-affiliation">University of Birmingham</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">EI</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Eduardo Ibarra García Padilla</span>
-                    <span class="speaker-affiliation">Harvey Mudd College</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">AK</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Anna Kauch</span>
-                    <span class="speaker-affiliation">TU Wien</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">AM</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Ankit Mahajan</span>
-                    <span class="speaker-affiliation">Columbia University</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">AM</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Andrew Millis</span>
-                    <span class="speaker-affiliation">CCQ Flatiron Institute</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">AV</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Agnes Valenti</span>
-                    <span class="speaker-affiliation">CCQ Flatiron Institute</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">JD</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Jan von Delft</span>
-                    <span class="speaker-affiliation">Ludwig-Maximilians-University</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">PW</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Philipp Werner</span>
-                    <span class="speaker-affiliation">University of Fribourg</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">XY</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Xing-Can Yao</span>
-                    <span class="speaker-affiliation">University of Science and Technology of China</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">TY</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Tarik Yefsah</span>
-                    <span class="speaker-affiliation">École Normale Supérieure</span>
-                </div>
-            </div>
-            <div class="speaker-pill" data-type="panel">
-                <div class="speaker-avatar">MZ</div>
-                <div class="speaker-text">
-                    <span class="speaker-name">Martin Zwierlein</span>
-                    <span class="speaker-affiliation">MIT</span>
-                </div>
-            </div>
-        </div>
-	-->
-
-
 	</div>
-        <!-- <div class="speaker-count" id="speakerCount"></div> -->
     </section>
 
     <!-- Footer -->
