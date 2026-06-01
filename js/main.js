@@ -159,20 +159,3 @@ if (organisersGrid) {
     observer.observe(organisersGrid);
 }
 
-// // Observe individual organiser cards for staggered animation
-// const organiserCards = document.querySelectorAll('.organiser-card');
-// organiserCards.forEach(card => {
-//     observer.observe(card);
-// });
-
-// // Also observe venue cards
-// const venueCards = document.querySelectorAll('.venue-card');
-// venueCards.forEach(card => {
-//     observer.observe(card);
-// });
-
-// // // Also observe venue cards
-// // const cards = document.querySelectorAll('.organiser-card, .venue-card');
-// // cards.forEach(card => {
-// //     observer.observe(card);
-// // });
