@@ -44,6 +44,7 @@ body {
     opacity: 0.6;
 }
 
+
 /* ── Pills grid ── */
 .speaker-grid {
     display: flex;
@@ -66,8 +67,6 @@ body {
     border-radius: 3px;
     overflow: hidden;
     padding: 0.45rem 1rem 0.45rem 0.55rem;
-    border: 1px solid #e8e4dc;
-    border-radius: 3px;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
     opacity: 0;
     animation: fadeIn 0.4s ease forwards;
@@ -136,7 +135,7 @@ body {
     opacity: 1;
 }
 
-/* ── Expanded abstract ── */
+/* -- Expanded abstract -- */
 .pill-abstract {
     padding: 0 1.1rem 1.1rem;
     border-top: 1px solid #e8e4dc;
@@ -149,6 +148,94 @@ body {
     padding-top: 0.9rem;
 }
 
+/* -- tables -- */
+:root {                        
+	/* Main conference colours */                                                                                                     
+	--primary-color: white;                                                                           
+
+	/* Outer border */                  
+	--accent-border: #8b4513;                                                                                                         
+
+	/* Table */                                                   
+	--table-bg: #ffffff;                 
+	--border-color: #e6e6e6;
+	--head-color #8b4513;                                              
+
+	/* Text */                                                       
+	--muted-text: #5f6b7a;                                                 
+
+	/* Break rows */              
+	--break-bg: #f4efe8;
+	--break-text: black;
+
+	--radius: 0.3rem;                                                       
+}                                                                                                                  
+
+.table-wrapper {                                                                                                           
+border: 0.1rem solid var(--accent-border);
+	border-radius: var(--radius);                                                                                                         
+overflow: hidden; /* clips table to rounded corners */               
+background: white;                            
+
+	    box-shadow:                                                                                                                                                                                                                                                                          
+		    0 2px 8px rgba(0,0,0,0.04),                                
+		      0 8px 24px rgba(0,0,0,0.05);                                                                                              
+
+	    margin-bottom: 3rem;                       
+}                                                
+
+.schedule-table {                                                                                                                         
+width: 100%;                                                          
+       border-collapse: collapse;                                                                        
+background: var(--table-bg);                                                                                
+
+overflow: hidden;                     
+}                                                                                                                                         
+
+.schedule-table thead {                            
+background: var(--primary-color);                                                           
+}                                                                                                                                                                                                                                                                                            
+
+.schedule-table th {                                                                                                                      
+color: #8b4513;                                                                           
+padding: 1rem 1.25rem;                     
+	 text-align: left;                 
+}                           
+
+.schedule-table th.day{                                                  
+	font-size: 1.2rem;                                                                                                                                                                                                                                                                   
+	font-weight: 600;                                                                              
+}                                                                                                                                                                                                                                                                                            
+
+.schedule-table td {                                                                                                                      
+padding: 1rem 1.25rem;                                           
+	 text-align: left;                          
+}                                                                                                     
+
+.schedule-table tbody {                                                    
+	border-top: 1px solid #e8e4dc;                                                                                                    
+}                                                                                                                
+
+.schedule-table tbody tr {                       
+	border-bottom: 1px solid var(--border-color);
+}                                                                                                                                         
+
+.schedule-table tbody tr:last-child {                                              
+	border-bottom: none;           
+}            
+
+.time {                                                                    
+	font-weight: 500;                                                     
+	white-space: nowrap; 
+}       
+
+.break-row {                                                                                                                              
+background: var(--break-bg);
+color: var(--break-text);
+       font-weight: 400;             
+}                              
+     
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(4px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -158,57 +245,6 @@ body {
     .abstract-title { font-size: 0.88rem; }
     .pill-summary { padding: 0.75rem 0.9rem; }
 }
-A
-
-
-/*
-.speaker-avatar {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #e8e4dc, #f5f1e8);
-    border: 1px solid #d4c5a9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.65rem;
-    font-weight: 600;
-    color: #8b4513;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    flex-shrink: 0;
-    letter-spacing: 0.3px;
-}
-
-.speaker-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.05rem;
-}
-
-.speaker-name {
-    font-size: 0.88rem;
-    color: #2c2c2c;
-    font-weight: 500;
-    white-space: nowrap;
-}
-
-.speaker-affiliation {
-    font-size: 0.72rem;
-    color: #8b4513;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    white-space: nowrap;
-    opacity: 0.85;
-}
-
-.speaker-count {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.82rem;
-    color: #9a9a9a;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-*/
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(4px); }
